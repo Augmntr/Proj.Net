@@ -247,8 +247,8 @@ namespace ProjNet.CoordinateSystems.Transformations
 			parameterList.Add(new ProjectionParameter("semi_minor", ellipsoid.SemiMinorAxis));
 			parameterList.Add(new ProjectionParameter("unit", unit.MetersPerUnit));
 			IMathTransform transform = null;
-			switch (projection.ClassName.ToLower(CultureInfo.InvariantCulture).Replace(' ', '_'))
-			{
+		    switch (projection.ClassName.ToLower().Replace(' ', '_'))
+            {
 				case "mercator":
 				case "mercator_1sp":
 				case "mercator_2sp":

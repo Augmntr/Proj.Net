@@ -67,8 +67,8 @@ namespace ProjNet.CoordinateSystems
 		{
 			get
 			{
-				return String.Format("AXIS[\"{0}\", {1}]", Name, Orientation.ToString().ToUpper(System.Globalization.CultureInfo.InvariantCulture));
-			}
+			    return String.Format("AXIS[\"{0}\", {1}]", Name, Orientation.ToString().ToUpper());
+            }
 		}
 		/// <summary>
 		/// Gets an XML representation of this object
@@ -77,8 +77,8 @@ namespace ProjNet.CoordinateSystems
 		{
 			get
 			{
-				return String.Format(System.Globalization.CultureInfo.InvariantCulture.NumberFormat, "<CS_AxisInfo Name=\"{0}\" Orientation=\"{1}\"/>", Name, Orientation.ToString().ToUpper(System.Globalization.CultureInfo.InvariantCulture));
-			}
+			    return String.Format(System.Globalization.CultureInfo.InvariantCulture.NumberFormat, "<CS_AxisInfo Name=\"{0}\" Orientation=\"{1}\"/>", Name, Orientation.ToString().ToUpper());
+            }
 		}
 
 	}
