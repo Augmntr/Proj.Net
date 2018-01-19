@@ -179,12 +179,10 @@ namespace ProjNet.Converters.WellKnownText.IO
 			bool isNumber=false;
 			bool isWord=false;
 			byte[] ba=null;
-#if SILVERLIGHT
-			Encoding AE = System.Text.Encoding.Unicode;
-#else
-			ASCIIEncoding AE = new ASCIIEncoding();
-#endif
-			char[] ascii=null;
+
+		    Encoding AE = Encoding.UTF8;
+
+		    char[] ascii=null;
 			Char currentCharacter;
 			Char nextCharacter;
 			while (finished != 0 )
